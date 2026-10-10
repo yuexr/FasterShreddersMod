@@ -64,8 +64,8 @@ for asset, times in shredders.items():
 
 metadata = {
     'schema_version': 2,
-    'name': 'Faster Shredder',
-    'mod_id': 'FasterShredder',
+    'name': 'Faster Shredders',
+    'mod_id': 'FasterShredders',
     'author': 'yuexr',
     'version': '1.0.0',
     'description': 'Astroneer mod: 5x processing speed for Medium, Large, and XL Shredders.',
@@ -73,7 +73,7 @@ metadata = {
 }
 (payload / 'metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
 
-pak = output / '000-FasterShredder-1.0.0_P.pak'
+pak = output / '000-FasterShredders-1.0.0_P.pak'
 subprocess.run(
     [str(options.repak), 'pack', str(payload), str(pak), '--version', 'V8B'],
     check=True,
